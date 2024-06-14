@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col text-white gap-10 lg:gap-20 py-5 px-10 lg:px-20  bg-[#222222]"
+      className="flex flex-col text-white gap-10 lg:gap-20 py-5 px-10 lg:px-20 overflow-hidden  bg-[#222222]"
     >
       <motion.p
         ref={ref1}
