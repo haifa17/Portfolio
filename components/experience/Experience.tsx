@@ -50,7 +50,7 @@ const Experience = () => {
         Experience
       </motion.p>
       <div className="flex flex-col gap-5 lg:gap-10">
-        <div className="flex flex-col lg:flex justify-between">
+        <div className="flex flex-col lg:flex-row justify-between">
           <motion.p
             ref={ref2}
             initial="hidden"
@@ -100,7 +100,7 @@ const Experience = () => {
           animate={inView5 ? "visible" : "hidden"}
           variants={variants}
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className="flex flex-col lg:flex items-center gap-4"
+          className="flex flex-col lg:flex-row items-center gap-4"
         >
           <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">ReactJS</p>

@@ -1,15 +1,13 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 interface CardProps {
-  image: string;
   title: string;
   description: string;
 }
-const Card = ({ image, title, description }: CardProps) => {
+const Card = ({ title, description }: CardProps) => {
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -28,35 +26,15 @@ const Card = ({ image, title, description }: CardProps) => {
   };
 
   return (
-    <div className="flex flex-col lg:flex gap-5 items-center">
-      <div className=" max-w-20">
-        <motion.div
-          ref={ref1}
-          initial="hidden"
-          animate={inView1 ? "visible" : "hidden"}
-          variants={variants}
-          transition={{ ease: "easeInOut", duration: 0.5 }}
-          className=" flex items-center lg:justify-center rounded-full cursor-pointer"
-        >
-          <Image
-            src={image}
-            width={200}
-            height={20}
-            alt=""
-            layout="fixed"
-            className="hover:scale-125 hover:transition  "
-          />
-        </motion.div>
-      </div>
-
-      <div className="flex flex-col gap-2 justify-start items-start text-start  ">
+    <div className="flex flex-col  bg-gradient-to-r from-[#9A33FF] to-[#FF8660] p-1 w-[400px] h-[280px] rounded-md ">
+      <div className="bg-black  w-[392px] h-[270px] p-5">
         <motion.p
           ref={ref2}
           initial="hidden"
           animate={inView2 ? "visible" : "hidden"}
           variants={variants}
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className="font-bold text-2xl   "
+          className="font-bold text-2xl mb-5  "
         >
           {title}
         </motion.p>

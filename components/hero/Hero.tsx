@@ -30,7 +30,10 @@ const Hero = () => {
   };
 
   return (
-    <div id="home" className="flex flex-col text-white gap-10 py-8  items-center justify-center text-center">
+    <div
+      id="home"
+      className="flex flex-col text-white gap-10 py-8  items-center justify-center text-center"
+    >
       <motion.img
         ref={ref1}
         initial="hidden"
@@ -93,9 +96,12 @@ const Hero = () => {
         transition={{ ease: "easeInOut", duration: 1.25 }}
         className="flex items-center gap-2 lg:gap-8 lg:text-lg "
       >
-        <button className="rounded-full px-4 py-3 bg-white text-black font-semibold hover:border hover:border-white hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660] hover:inline-block hover:text-transparent hover:bg-clip-text ">
-          Get In Touch
-        </button>
+        <a href="#contact">
+          <button className="rounded-full px-4 py-3 bg-white text-black font-semibold hover:border hover:border-white hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660] hover:inline-block hover:text-transparent hover:bg-clip-text ">
+            Get In Touch
+          </button>
+        </a>
+
         <a href="/file/Haifa_Khiari.pdf" download>
           <button className="rounded-full px-4 py-3 border border-white hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  hover:font-semibold">
             Download CV

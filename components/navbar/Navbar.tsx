@@ -5,6 +5,9 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(!open)
+  }
   return (
     <div className="bg-[#222222] flex justify-end lg:justify-center  py-8  ">
       <div className="hidden text-white lg:flex items-center gap-10 mx-auto max-w-7xl">
@@ -40,14 +43,13 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <div className="flex px-5 lg:hidden  " onClick={() => setOpen(!open)}>
+      <div className="flex px-5 lg:hidden  " onClick={handleClick}>
         <Menu size={30} className="text-white" />
       </div>
       {open && (
         <div className=" fixed inset-0 z-50 flex">
           <div
             className="ml-auto w-full h-[30%] mt-20 bg-white   p-4 shadow-lg z-10  "
-            onClick={() => setOpen(!open)}
           >
             <div className="flex flex-col gap-5  ">
               <Link

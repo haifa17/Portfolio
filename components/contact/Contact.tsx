@@ -65,7 +65,7 @@ const Contact = () => {
         technologies . Excited for new opportunities and eager to improve my
         skills.
       </motion.p>
-      <div className="flex flex-col gap-8 lg:flex lg:justify-between  lg:px-40 ">
+      <div className="flex flex-col gap-8 lg:flex-row lg:justify-between  lg:px-40 ">
         <form>
           <motion.div
             ref={ref3}

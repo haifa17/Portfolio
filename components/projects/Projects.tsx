@@ -17,33 +17,34 @@ const Projects = () => {
 
   const cards1 = [
     {
-      image: "/projects/bello.webp",
       title: "Bello Poultry Market",
       description:
-        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use",
+        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
     },
     {
-      image: "/projects/future.png",
       title: "Future Poultry Market",
       description:
-        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use",
+        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
     },
+  ];
+  const cards2 = [
     {
-      image: "/projects/muslim.jpg",
       title: "Muslim Guide",
       description:
         "Developed a seamless and responsive landing page using React.js ,mplemented an advanced translation feature using i18n internationalization, allowing users to easily switch between multiple languages. This enhancement significantly improved the app's accessibility and usability for a diverse, global audience.  ",
     },
     {
-      image: "/projects/logo.webp",
       title: "XpresFood",
       description:
-        "Created an admin dashboard using Next.js framework ,for managing products, categories, users, and other aspects of the e-commerce platform, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly. Implemented advanced filtering functionalities allowing users to filter products by name, category, subcategory, and price,",
+        "Created an admin dashboard using Next.js framework ,for managing products, categories, users, and other aspects of the e-commerce platform, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly and Implemented advanced filtering functionalities",
     },
   ];
 
   return (
-    <div id="projects" className="flex flex-col px-10 lg:px-20 text-white gap-10 lg:gap-20 py-8  items-center justify-center text-center">
+    <div
+      id="projects"
+      className="flex flex-col px-10 lg:px-20 text-white gap-10 lg:gap-20 py-8  items-center justify-center text-center"
+    >
       <motion.p
         ref={ref1}
         initial="hidden"
@@ -54,14 +55,17 @@ const Projects = () => {
       >
         Projects
       </motion.p>
-      <div className="flex flex-col gap-5 ">
+      <div className="flex flex-col lg:flex-row gap-10 ">
         {cards1.map((card, index) => (
           <div key={index}>
-            <Card
-              title={card.title}
-              description={card.description}
-              image={card.image}
-            />
+            <Card title={card.title} description={card.description} />
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-col lg:flex-row gap-10 ">
+        {cards2.map((card, index) => (
+          <div key={index}>
+            <Card title={card.title} description={card.description} />
           </div>
         ))}
       </div>
