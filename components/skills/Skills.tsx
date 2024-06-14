@@ -43,35 +43,35 @@ const Skills = () => {
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
 
         <Image
@@ -79,14 +79,14 @@ const Skills = () => {
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out "
         />
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
           width={80}
           height={20}
           alt=""
-          className=" cursor-pointer hover:scale-125 hover:transition"
+          className=" cursor-pointer hover:scale-125 transition-all ease-in-out"
         />
       </motion.div>
     </div>
