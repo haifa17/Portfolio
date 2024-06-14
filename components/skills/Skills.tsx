@@ -36,7 +36,7 @@ const Skills = () => {
         animate={inView2 ? "visible" : "hidden"}
         variants={variants}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="flex flex-col lg:flex-row items-center gap-16 "
+        className="flex flex-wrap lg:flex-row justify-center items-center gap-16 "
       >
         <Image
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
