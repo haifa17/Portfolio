@@ -102,22 +102,22 @@ const Experience = () => {
           transition={{ ease: "easeInOut", duration: 0.5 }}
           className="flex flex-col lg:flex-row items-center gap-4"
         >
-          <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">ReactJS</p>
           </div>
-          <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">NextJS</p>
           </div>
-          <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">JavaScript</p>
           </div>
-          <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">Typescript</p>
           </div>
           <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full  ">Tailwind CSS</p>
           </div>
-          <div className=" w-[100px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">Git</p>
           </div>
         </motion.div>
