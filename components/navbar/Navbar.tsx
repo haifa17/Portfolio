@@ -1,5 +1,5 @@
 "use client";
-import { Menu } from "lucide-react";
+import { Award, BriefcaseBusiness, FolderGit2, Home, Menu, Phone } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -46,39 +46,39 @@ const Navbar = () => {
       <div className="flex mr-10 lg:hidden  " onClick={handleClick}>
         <Menu size={30} className="text-white" />
         {open && (
-          <div className=" fixed inset-0 z-50 flex">
-            <div className="ml-auto w-full h-[30%] mt-20 bg-white   p-4 shadow-lg z-10  ">
-              <div className="flex flex-col gap-5  ">
+          <div className=" fixed inset-0 z-10 flex">
+            <div className="ml-auto w-full h-[30%] mt-20 bg-white p-4 shadow-lg z-10  ">
+              <div className="flex flex-col  gap-7  ">
                 <Link
                   href="#home"
-                  className=" curosr-pointer text-xl font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text"
+                  className="flex items-center gap-2 curosr-pointer text-xl font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text"
                 >
-                  Home
+                  <Home size={20} /> Home
                 </Link>
                 <Link
                   href="#skills"
-                  className="text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
+                  className=" flex items-center gap-2  text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
                 >
-                  Skills
+                  <Award size={20} /> Skills
                 </Link>
                 <Link
                   href="#experience"
-                  className="text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
+                  className=" flex items-center gap-2  text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
                 >
-                  Experience
+                 <BriefcaseBusiness size={20} /> Experience
                 </Link>
                 <Link
                   href="#projects"
-                  className=" text-xl curosr-pointer  font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
+                  className="flex items-center gap-2 text-xl curosr-pointer  font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
                 >
-                  Projects
+                  <FolderGit2 size={20} /> Projects
                 </Link>
 
                 <Link
                   href="#contact"
-                  className=" text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
+                  className=" flex items-center gap-2  text-xl curosr-pointer font-semibold hover:bg-gradient-to-r from-[#FF8660] to-[#9A33FF] hover:inline-block hover:text-transparent hover:bg-clip-text "
                 >
-                  Contact
+                  <Phone size={20} /> Contact
                 </Link>
               </div>
             </div>
