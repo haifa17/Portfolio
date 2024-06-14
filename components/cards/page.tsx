@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 interface CardProps {
   title: string;
   description: string;

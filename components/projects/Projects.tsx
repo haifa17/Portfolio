@@ -23,7 +23,7 @@ const Projects = () => {
         "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
     },
     {
-      video1: "/projects/screen17.mp4",
+      video1: "/projects/screen18.mp4",
       title: "Future Poultry Market",
       description:
         "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
