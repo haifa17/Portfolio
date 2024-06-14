@@ -30,7 +30,7 @@ const Card = ({ title, description }: CardProps) => {
           animate={inView2 ? "visible" : "hidden"}
           variants={variants}
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className="font-bold text-xl lg:text-2xl mb-5  "
+          className="font-bold text-xl lg:text-2xl mb-3  "
         >
           {title}
         </motion.p>

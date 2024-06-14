@@ -9,7 +9,7 @@ const Navbar = () => {
     setOpen(!open);
   };
   return (
-    <div className="bg-[#222222] flex justify-end lg:justify-center  py-8  ">
+    <div className="bg-[#222222] flex justify-end lg:justify-center overflow-hidden  py-8  ">
       <div className="hidden text-white lg:flex items-center gap-10 mx-auto max-w-7xl">
         <Link
           href="#home"
