@@ -47,7 +47,7 @@ const Navbar = () => {
         <Menu size={30} className="text-white" />
         {open && (
           <div className=" fixed inset-0 z-10 flex">
-            <div className="ml-auto w-full h-[30%] mt-20 bg-white p-4 shadow-lg z-10  ">
+            <div className="ml-auto w-full h-[300px] mt-20 bg-white p-4 shadow-lg z-10  ">
               <div className="flex flex-col  gap-7  ">
                 <Link
                   href="#home"

@@ -23,7 +23,7 @@ const Card = ({ title, description }: CardProps) => {
 
   return (
     <div className="flex flex-col  bg-gradient-to-r from-[#9A33FF] to-[#FF8660] p-1 w-[250px]  lg:w-[400px] lg:h-[280px] rounded-md ">
-      <div className="bg-black  lg:w-[392px]  h-[380px] lg:h-[270px] p-5">
+      <div className="bg-black  lg:w-[392px]  h-[400px] lg:h-[270px] p-5">
         <motion.p
           ref={ref2}
           initial="hidden"
