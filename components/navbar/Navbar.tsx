@@ -43,7 +43,9 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-      <div className="flex px-5 lg:hidden  " onClick={handleClick}>
+      <div className="flex px-5 lg:hidden  "
+        onClick={handleClick}
+      >
         <Menu size={30} className="text-white" />
       </div>
       {open && (

@@ -53,7 +53,7 @@ const Hero = () => {
           transition={{ ease: "easeInOut", duration: 0.5, delay: 0.5 }}
           className=" lg:text-4xl"
         >
-          I'm Haifa Khiari
+          I&#39;m Haifa Khiari
         </motion.p>
         <motion.p
           ref={ref3}
