@@ -17,11 +17,13 @@ const Projects = () => {
 
   const cards1 = [
     {
+      video1: "/projects/scrren15.mp4",
       title: "Bello Poultry Market",
       description:
         "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
     },
     {
+      video1: "/projects/screen17.mp4",
       title: "Future Poultry Market",
       description:
         "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
@@ -29,14 +31,16 @@ const Projects = () => {
   ];
   const cards2 = [
     {
-      title: "Muslim Guide",
+      video1: "/projects/scrren13.mp4",
+      title: "XpresFood Dashboard",
       description:
         "Developed a seamless and responsive landing page using React.js ,mplemented an advanced translation feature using i18n internationalization, allowing users to easily switch between multiple languages. This enhancement significantly improved the app's accessibility and usability for a diverse, global audience.  ",
     },
     {
-      title: "XpresFood",
+      video1: "/projects/screen16.mp4",
+      title: "XpresFood Store ",
       description:
-        "Created an admin dashboard using Next.js framework ,for managing products, categories, users, and other aspects of the e-commerce platform, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly and Implemented advanced filtering functionalities",
+        "Created an admin dashboard using Next.js framework ,for managing products, categories, users and orders, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly and Implemented advanced filtering functionalities",
     },
   ];
 
@@ -58,14 +62,22 @@ const Projects = () => {
       <div className="flex flex-col lg:flex-row gap-10 ">
         {cards1.map((card, index) => (
           <div key={index}>
-            <Card title={card.title} description={card.description} />
+            <Card
+              title={card.title}
+              description={card.description}
+              video1={card.video1}
+            />
           </div>
         ))}
       </div>
       <div className="flex flex-col lg:flex-row gap-10 ">
         {cards2.map((card, index) => (
           <div key={index}>
-            <Card title={card.title} description={card.description} />
+            <Card
+              video1={card.video1}
+              title={card.title}
+              description={card.description}
+            />
           </div>
         ))}
       </div>

@@ -2,12 +2,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 interface CardProps {
   title: string;
   description: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  video1?: string;
+  video2?: string;
 }
-const Card = ({ title, description }: CardProps) => {
+const Card = ({
+  title,
+  description,
+  video1,
+  image1,
+  image2,
+  image3,
+  video2,
+}: CardProps) => {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const [ref2, inView2] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -22,8 +40,25 @@ const Card = ({ title, description }: CardProps) => {
   };
 
   return (
-    <div className="flex flex-col  bg-gradient-to-r from-[#9A33FF] to-[#FF8660] p-1 w-[250px]  lg:w-[400px] lg:h-[280px] rounded-md ">
-      <div className="bg-black  lg:w-[392px]  h-[400px] lg:h-[270px] p-5">
+    <div className="flex flex-col  bg-gradient-to-r from-[#9A33FF] to-[#FF8660] p-1 w-[250px]  lg:w-[400px] lg:h-[500px] rounded-md ">
+      <div className="bg-black  lg:w-[392px]  h-[490px] p-5">
+        <motion.div
+          ref={ref1}
+          initial="hidden"
+          animate={inView1 ? "visible" : "hidden"}
+          variants={variants}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
+          className=""
+        >
+          <video
+            src={video1}
+            controls={false}
+            autoPlay
+            loop
+            playsInline
+            className="mb-2  "
+          />
+        </motion.div>
         <motion.p
           ref={ref2}
           initial="hidden"
@@ -41,7 +76,7 @@ const Card = ({ title, description }: CardProps) => {
             animate={inView3 ? "visible" : "hidden"}
             variants={variants}
             transition={{ ease: "easeInOut", duration: 0.5 }}
-            className=" text-[#E1E1E1]  text-sm"
+            className=" text-[#E1E1E1]  text-xs lg:text-sm "
           >
             {" "}
             {description}
