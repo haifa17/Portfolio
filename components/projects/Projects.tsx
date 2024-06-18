@@ -55,7 +55,7 @@ const Projects = () => {
         animate={inView1 ? "visible" : "hidden"}
         variants={variants}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="font-extrabold text-4xl uppercase bg-gradient-to-r from-[#5BADFF] to-[#1373D1] inline-block text-transparent bg-clip-text"
+        className="font-extrabold text-4xl uppercase shadow-md"
       >
         Projects
       </motion.p>
