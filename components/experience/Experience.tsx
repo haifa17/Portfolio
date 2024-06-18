@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const Experience = () => {
   const [ref1, inView1] = useInView({
-    triggerOnce: true, // Animation will only trigger once
-    threshold: 0.5, // Animation will trigger when 50% of the component is in view
+    triggerOnce: true, 
+    threshold: 0.5,
   });
   const [ref2, inView2] = useInView({
     triggerOnce: true,
@@ -45,7 +45,7 @@ const Experience = () => {
         animate={inView1 ? "visible" : "hidden"}
         variants={variants}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="font-extrabold text-4xl uppercase bg-gradient-to-r from-[#5BADFF] to-[#1373D1] inline-block text-transparent bg-clip-text"
+        className="font-extrabold text-4xl uppercase bg-gradient-to-r from-[#9A33FF] to-[#FF8660] inline-block text-transparent bg-clip-text"
       >
         Experience
       </motion.p>
@@ -102,22 +102,22 @@ const Experience = () => {
           transition={{ ease: "easeInOut", duration: 0.5 }}
           className="flex flex-col lg:flex-row items-center gap-4"
         >
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">ReactJS</p>
           </div>
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">NextJS</p>
           </div>
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">JavaScript</p>
           </div>
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">Typescript</p>
           </div>
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full  ">Tailwind CSS</p>
           </div>
-          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
+          <div className=" w-[130px] cursor-pointer text-center rounded-full px-4 py-2 border border-[#9A33FF] transition-all duration-500 ease-in-out bg-gradient-to-r from-[#9A33FF] to-[#FF8660]  ">
             <p className="h-full w-full ">Git</p>
           </div>
         </motion.div>

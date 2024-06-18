@@ -7,8 +7,8 @@ import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
   const [ref1, inView1] = useInView({
-    triggerOnce: true, // Animation will only trigger once
-    threshold: 0.5, // Animation will trigger when 50% of the component is in view
+    triggerOnce: true, 
+    threshold: 0.5,
   });
   const [ref2, inView2] = useInView({
     triggerOnce: true,

@@ -20,13 +20,13 @@ const Projects = () => {
       video1: "/projects/scrren15.mp4",
       title: "Bello Poultry Market",
       description:
-        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
+        "Developed a versatile web application using Next.js to manage customers, simplifying customer interactions and data management. The platform includes multilingual support with strong translation features, allowing easy communication with a diverse customer base. Administrators can manage profiles, track interactions, and analyze data effectively, providing personalized service in different languages.",
     },
     {
       video1: "/projects/screen18.mp4",
       title: "Future Poultry Market",
       description:
-        "Developed e-commerce web application using Next.js framework, including a dashboard for managing products, categories, users, and other aspects of the e- commerce platform,providing comprehensive control over the platform's functionalities and store interface for both admin and customer use.",
+        "Built a robust e-commerce web application with Next.js, featuring an intuitive dashboard for managing products, categories, users, and other essential elements of the platform. The application offers full control over all functionalities and includes a versatile store interface tailored for administrators.",
     },
   ];
   const cards2 = [
@@ -34,13 +34,13 @@ const Projects = () => {
       video1: "/projects/scrren13.mp4",
       title: "XpresFood Dashboard",
       description:
-        "Developed a seamless and responsive landing page using React.js ,mplemented an advanced translation feature using i18n internationalization, allowing users to easily switch between multiple languages. This enhancement significantly improved the app's accessibility and usability for a diverse, global audience.  ",
+        "Created an admin dashboard using Next.js framework ,for managing products, categories, users and orders, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly and Implemented advanced filtering functionalities",
     },
     {
       video1: "/projects/screen16.mp4",
       title: "XpresFood Store ",
       description:
-        "Created an admin dashboard using Next.js framework ,for managing products, categories, users and orders, providing comprehensive control over the platform's functionalities.  Designed a customer dashboard to enhance the shopping experience, enabling users to manage their accounts, track orders, and interact with the platform's features seamlessly and Implemented advanced filtering functionalities",
+        "Developed a dynamic and user-friendly online store using the Next.js framework. The store features advanced filtering options that allow customers to easily search and sort products based on various criteria such as category, price, and size. This enhances the shopping experience by making it straightforward to find desired items. The platform also supports smooth navigation and a responsive design, ensuring accessibility and usability across all devices.",
     },
   ];
 
@@ -55,21 +55,11 @@ const Projects = () => {
         animate={inView1 ? "visible" : "hidden"}
         variants={variants}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="font-extrabold text-4xl bg-gradient-to-r from-[#9A33FF] to-[#FF8660] inline-block text-transparent bg-clip-text uppercase shadow-md"
+        className="font-extrabold text-4xl uppercase bg-gradient-to-r from-[#5BADFF] to-[#1373D1] inline-block text-transparent bg-clip-text"
       >
         Projects
       </motion.p>
-      <div className="flex flex-col lg:flex-row gap-10 ">
-        {cards1.map((card, index) => (
-          <div key={index}>
-            <Card
-              title={card.title}
-              description={card.description}
-              video1={card.video1}
-            />
-          </div>
-        ))}
-      </div>
+
       <div className="flex flex-col lg:flex-row gap-10 ">
         {cards2.map((card, index) => (
           <div key={index}>
@@ -77,6 +67,17 @@ const Projects = () => {
               video1={card.video1}
               title={card.title}
               description={card.description}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-col lg:flex-row gap-10 ">
+        {cards1.map((card, index) => (
+          <div key={index}>
+            <Card
+              title={card.title}
+              description={card.description}
+              video1={card.video1}
             />
           </div>
         ))}

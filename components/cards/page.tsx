@@ -11,15 +11,7 @@ interface CardProps {
   video1?: string;
   video2?: string;
 }
-const Card = ({
-  title,
-  description,
-  video1,
-  image1,
-  image2,
-  image3,
-  video2,
-}: CardProps) => {
+const Card = ({ title, description, video1 }: CardProps) => {
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -38,7 +30,7 @@ const Card = ({
   };
 
   return (
-    <div className="flex flex-col  bg-gradient-to-r from-[#9A33FF] to-[#FF8660] p-1 w-[250px]  lg:w-[400px] lg:h-[500px] rounded-md ">
+    <div className="flex flex-col cursor-pointer bg-gradient-to-r from-[#5BADFF] to-[#1373D1]   p-1 w-[250px]  lg:w-[400px] lg:h-[500px] rounded-md  hover:scale-110 transition-all ease-in-out ">
       <div className="bg-black  lg:w-[392px]  h-[490px] p-5">
         <motion.div
           ref={ref1}
@@ -46,15 +38,15 @@ const Card = ({
           animate={inView1 ? "visible" : "hidden"}
           variants={variants}
           transition={{ ease: "easeInOut", duration: 0.5 }}
-          className=""
+          className="  "
         >
           <video
             src={video1}
-            controls={false}
-            autoPlay
+            controls={true}
+            autoPlay={true}
             loop
             playsInline
-            className="mb-2  "
+            className="mb-2 w-full h-[150px] lg:h-[200px] object-contain hover:h-[180px] hover:lg:h-[230px] transition-all ease-in-out "
           />
         </motion.div>
         <motion.p
